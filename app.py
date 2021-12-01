@@ -192,7 +192,7 @@ async def update_product(name: str, price: str, current_user: User = Depends(get
             detail="product not found",
         )
 
-connect(host='mongodb+srv://senka:SinaSenka@cluster0.aobxq.mongodb.net/yadakavaran?retryWrites=true&w=majority')
+connect(host='mongodb+srv://...(connection string)')
 
 
 app.include_router(user_router)
